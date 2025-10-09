@@ -1,0 +1,17 @@
+    p{
+     color: aqua;
+    }
+
+    .gach-ngang {
+        text-decoration: line-through;
+    }
+
+    h1{
+        color: blue;
+    }
+
+    dac-biet {
+        color: chartreuse;
+        font-style: italic;
+        font-weight: bolder;
+    }
