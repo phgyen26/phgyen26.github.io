@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Box Model Dễ Hiểu</title>
+  <style>
+    /* Hộp ngoài cùng - có margin (khoảng cách bên ngoài) */
+    .margin-box {
+      background-color: lightgray;
+      margin: 30px;          /* cách ngoài 30px */
+      padding: 20px;         /* chứa hộp tiếp theo */
+    }
+
+    /* Hộp giữa - có border (viền) */
+    .border-box {
+      background-color: lightblue;
+      border: 5px solid blue; /* viền xanh */
+      padding: 20px;          /* chứa hộp trong cùng */
+    }
+
+    /* Hộp trong cùng - có padding */
+    .padding-box {
+      background-color: lightgreen;
+      padding: 20px;          /* khoảng trống giữa nội dung và mép */
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Box Model (3 hộp lồng nhau)</h3>
+
+  <div class="margin-box">
+    Margin Box
+    <div class="border-box">
+      Border Box
+      <div class="padding-box">
+        Padding Box (nội dung ở đây)
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ex03</title>
+</head>
+<body>
+    <table style ="margin-left: 400px; margin-top: 100px;">
+        <tr>
+            <td>a:</td>
+            <td><input type="number" id="a" name="a"/></td>
+            <tr>
+            <td>b:</td>
+            <td><input type="number" id="b" name="b"/></td>
+            </tr>
+            <tr>
+            </tr>
+            <td></td>
+            <td colspan="2">
+                <button id="tong" name="tong">tong</button>
+                <button id="huy" name="huy">huy</button>
+            </td>
+            <tr>
+                <td></td>
+                <td id="kq" style="color:brown"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="tb" style="color:chocolate"></td>
+            </tr>
+    </table>
+<script>
+    var a=document.getElementById('a');
+    var b=document.getElementById('b');
+    var tong=document.getElementById('tong');
+    var huy=document.getElementById('huy');
+    var kq=document.getElementById('kq');
+    var tb=document.getElementById('tb');
+    tong.onclick=function(){
+        var c=parseInt(a.value)+parseInt(b.value);
+        if(a.value===''||b.value===''){
+            document.getElementById('tb').innerHTML="can dien du thong tin";
+            document.getElementById('kq').innerHTML='';
+        } else{
+            document.getElementById('tb').innerHTML="";
+            document.getElementById('kq').innerHTML="kq="+c;
+        } 
+    }
+huy.onclick=function(){
+    a.value='';
+    b.value='';
+    document.getElementById('tb').innerHTML="huy thanh cong";
+}
+</script>
+</body>
+</html>

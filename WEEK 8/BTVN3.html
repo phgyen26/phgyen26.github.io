@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Hình chữ nhật - document.write()</title>
+<script>
+  var a = prompt("Nhập chiều dài (a):");
+  var b = prompt("Nhập chiều rộng (b):");
+
+  if (a == null || a.trim() === "" || isNaN(a) || b == null || b.trim() === "" || isNaN(b)) {
+    document.write("<font color='red'><b> Dữ liệu nhập không hợp lệ! Vui lòng nhập lại số hợp lệ.</b></font>");
+  } else if (a <= 0 || b <= 0) {
+    document.write("<font color='red'><b> Chiều dài và chiều rộng phải lớn hơn 0!</b></font>");
+  } else {
+    var dai = parseFloat(a);
+    var rong = parseFloat(b);
+    var chuvi = 2 * (dai + rong);
+    var dientich = dai * rong;
+
+    document.write("<h2>Kết quả tính hình chữ nhật</h2>");
+    document.write("Chiều dài: " + dai + "<br>");
+    document.write("Chiều rộng: " + rong + "<br>");
+    document.write("<font color='blue'><b>Chu vi = " + chuvi + "</b></font><br>");
+    document.write("<font color='green'><b>Diện tích = " + dientich + "</b></font>");
+  }
+</script>
+</head>
+<body>
+</body>
+</html>

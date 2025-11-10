@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Fruits </title>
+</head>
+<body>
+<p>
+<img src="picture 2/apple.png" alt="apple" width="200">
+  <img src="picture 2/banana.png" alt="kiwi" width="200">
+  <img src="picture 2/orange.png" alt="Orange" width="200">
+  <img src="picture 2/orange.png" alt="Banana" width="200">
+</p>
+   <img src="picture 2/banana.png" alt="Banana" width="200">
+  <img src="picture 2/banana.png" alt="kiwi" width="200">
+  <img src="picture 2/orange.png" alt="Orange" width="200">
+  <img src="picture 2/banana.png" alt="Banana" width="200">
+<p>
+
+<p>
+  <img src="picture 2/orange.png" alt="Banana" width="200">
+  <img src="picture 2/orange.png" alt="kiwi" width="200">
+  <img src="picture 2/banana.png" alt="Orange" width="200">
+  <img src="picture 2/apple.png" alt="Banana" width="200">
+</p>
+ 
+</body>
+</html>
